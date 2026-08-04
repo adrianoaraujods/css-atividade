@@ -82,6 +82,10 @@ header nav ul a:hover {
 	font-weight: 700;
 }
 
+.logo:hover {
+	text-decoration: underline;
+}
+
 .btn {
 	display: inline-block;
 	padding: 10px var(--spacing);
@@ -178,4 +182,28 @@ footer {
 	padding: 32px var(--spacing);
 	text-align: center;
 	color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+	header nav ul {
+		display: none;
+	}
+
+	.hero-inner {
+		padding: 64px var(--spacing);
+	}
+
+	.actions {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.actions .btn {
+		text-align: center;
+	}
+
+	.cards-list {
+		grid-template-columns: 1fr;
+		padding-bottom: 64px;
+	}
 }
