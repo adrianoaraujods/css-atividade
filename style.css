@@ -139,12 +139,12 @@ header nav ul a:hover {
 }
 
 .cards-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--spacing);
 	max-width: var(--max-width);
 	margin: 0 auto;
 	padding: 48px var(--spacing) 96px;
-	display: flex;
-	flex-direction: column;
-	gap: var(--spacing);
 }
 
 .card {
@@ -152,6 +152,7 @@ header nav ul a:hover {
 	color: var(--primary);
 	border-radius: var(--spacing);
 	padding: var(--spacing);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .card h2 {
@@ -166,6 +167,10 @@ header nav ul a:hover {
 .card a {
 	color: var(--primary);
 	text-decoration: underline;
+}
+
+.card a:hover {
+	text-decoration-thickness: 2px;
 }
 
 footer {
