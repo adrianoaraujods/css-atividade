@@ -9,6 +9,7 @@
 	--text-muted: rgba(255, 255, 255, 0.5);
 
 	--spacing: 24px;
+	--max-width: 1024px;
 }
 
 * {
@@ -52,7 +53,7 @@ header nav {
 	align-items: center;
 	justify-content: space-between;
 	gap: var(--spacing);
-	max-width: 1024px;
+	max-width: var(--max-width);
 	margin: 0 auto;
 	padding: var(--spacing);
 }
@@ -80,7 +81,7 @@ header nav ul {
 	flex-direction: column;
 	align-items: start;
 	gap: var(--spacing);
-	max-width: 1024px;
+	max-width: var(--max-width);
 	margin: 0 auto;
 	padding: 96px var(--spacing);
 }
@@ -93,4 +94,38 @@ header nav ul {
 .hero p {
 	max-width: 60ch;
 	margin-top: var(--spacing);
+}
+
+.cards {
+	background: var(--card);
+}
+
+.cards-list {
+	max-width: var(--max-width);
+	margin: 0 auto;
+	padding: 48px var(--spacing) 96px;
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing);
+}
+
+.card {
+	background-color: var(--text-heading);
+	color: var(--primary);
+	border-radius: var(--spacing);
+	padding: var(--spacing);
+}
+
+.card h2 {
+	color: var(--primary);
+	margin-bottom: 12px;
+}
+
+.card p {
+	margin-bottom: 16px;
+}
+
+.card a {
+	color: var(--primary);
+	text-decoration: underline;
 }
