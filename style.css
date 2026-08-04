@@ -7,6 +7,8 @@
 	--text: rgba(255, 255, 255, 0.85);
 	--text-heading: #ffffff;
 	--text-muted: rgba(255, 255, 255, 0.5);
+
+	--spacing: 24px;
 }
 
 * {
@@ -38,4 +40,37 @@ h6 {
 a {
 	color: var(--text-heading);
 	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+header nav {
+	position: sticky;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--spacing);
+	max-width: var(--container);
+	margin: 0 auto;
+	padding: var(--spacing);
+}
+
+header nav ul {
+	display: flex;
+	gap: var(--spacing);
+}
+
+.logo {
+	font-weight: 700;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px var(--spacing);
+	border-radius: 4px;
+	background: var(--secondary);
+	color: var(--bg);
+	font-weight: 700;
 }
