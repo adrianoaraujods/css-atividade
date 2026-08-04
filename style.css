@@ -52,7 +52,7 @@ header nav {
 	align-items: center;
 	justify-content: space-between;
 	gap: var(--spacing);
-	max-width: var(--container);
+	max-width: 1024px;
 	margin: 0 auto;
 	padding: var(--spacing);
 }
@@ -73,4 +73,24 @@ header nav ul {
 	background: var(--secondary);
 	color: var(--bg);
 	font-weight: 700;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: var(--spacing);
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 96px var(--spacing);
+}
+
+.hero h1 {
+	max-width: 20ch;
+	line-height: 1.2;
+}
+
+.hero p {
+	max-width: 60ch;
+	margin-top: var(--spacing);
 }
