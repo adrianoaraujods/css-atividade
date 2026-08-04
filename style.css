@@ -10,12 +10,18 @@
 
 	--spacing: 24px;
 	--max-width: 1024px;
+
+	--header-height: 94px;
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+html {
+	scroll-padding-top: var(--header-height);
 }
 
 body {
@@ -47,8 +53,13 @@ ul {
 	list-style: none;
 }
 
-header nav {
+header {
 	position: sticky;
+	top: 0;
+	background: var(--bg);
+}
+
+header nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -61,6 +72,10 @@ header nav {
 header nav ul {
 	display: flex;
 	gap: var(--spacing);
+}
+
+header nav ul a:hover {
+	text-decoration: underline;
 }
 
 .logo {
@@ -76,6 +91,10 @@ header nav ul {
 	font-weight: 700;
 }
 
+.btn:hover {
+	filter: brightness(1.15);
+}
+
 .hero {
 	display: flex;
 	flex-direction: column;
@@ -83,7 +102,7 @@ header nav ul {
 	gap: var(--spacing);
 	max-width: var(--max-width);
 	margin: 0 auto;
-	padding: 96px var(--spacing);
+	padding: calc(var(--header-height) + var(--spacing)) var(--spacing) 96px;
 }
 
 .hero h1 {
