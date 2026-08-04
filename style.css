@@ -129,3 +129,10 @@ header nav ul {
 	color: var(--primary);
 	text-decoration: underline;
 }
+
+footer {
+	background: var(--bg);
+	padding: 32px var(--spacing);
+	text-align: center;
+	color: var(--text-muted);
+}
